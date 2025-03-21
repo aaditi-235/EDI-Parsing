@@ -1,0 +1,800 @@
+{
+  "interchanges": [
+    {
+      "ISA": "Interchange Control Header",
+      "ISA_01_AuthorizationQualifier": "00",
+      "ISA_02_AuthorizationInformation": "          ",
+      "ISA_03_SecurityQualifier": "00",
+      "ISA_04_SecurityInformation": "          ",
+      "ISA_05_SenderQualifier": "30",
+      "ISA_06_SenderId": "133052274      ",
+      "ISA_07_ReceiverQualifier": "ZZ",
+      "ISA_08_ReceiverId": "421406317      ",
+      "ISA_09_Date": "180807",
+      "ISA_10_Time": "1202",
+      "ISA_11_RepetitionSeparator": "^",
+      "ISA_12_Version": "00501",
+      "ISA_13_InterchangeControlNumber": "000001508",
+      "ISA_14_AcknowledgmentRequested": "0",
+      "ISA_15_TestIndicator": "T",
+      "functional_groups": [
+        {
+          "GS": "Functional Group Header",
+          "GS_01_FunctionalIdentifierCode": "HC",
+          "GS_02_ApplicationSenderCode": "133052274",
+          "GS_03_ApplicationReceiverCode": "421406317",
+          "GS_04_Date": "20180807",
+          "GS_05_Time": "12022761",
+          "GS_06_GroupControlNumber": "150800",
+          "GS_07_ResponsibleAgencyCode": "X",
+          "GS_08_Version": "005010X223A2",
+          "transactions": [
+            {
+              "837": "Health Care Claim",
+              "ST": "Transaction Set Header",
+              "ST_01_TransactionSetIdentifierCode": "837",
+              "ST_02_TransactionSetControlNumber": "0001",
+              "ST_03_ImplementationConventionReference": "005010X223A2",
+              "segments": [
+                {
+                  "BHT": "Beginning of Hierarchical Transaction",
+                  "BHT_01_description": "Hierarchical Structure Code",
+                  "BHT_01": "0019",
+                  "BHT_01_code_0019": "Information Source, Subscriber, Dependent",
+                  "BHT_02_description": "Transaction Set Purpose Code",
+                  "BHT_02": "00",
+                  "BHT_02_code_00": "Original",
+                  "BHT_03_description": "Reference Identification",
+                  "BHT_03": "0008B7D46",
+                  "BHT_04_description": "Date",
+                  "BHT_04": "20180807",
+                  "BHT_05_description": "Time",
+                  "BHT_05": "12022762",
+                  "BHT_06_description": "Transaction Type Code",
+                  "BHT_06": "CH",
+                  "BHT_06_code_CH": "Chargeable"
+                },
+                {
+                  "NM1-1000A_loop": [
+                    {
+                      "NM1": "Individual or Organizational Name",
+                      "NM1_01_description": "Entity Identifier Code",
+                      "NM1_01": "41",
+                      "NM1_01_code_41": "Submitter",
+                      "NM1_02_description": "Entity Type Qualifier",
+                      "NM1_02": "2",
+                      "NM1_02_code_2": "Non-Person Entity",
+                      "NM1_03_description": "Name Last or Organization Name",
+                      "NM1_03": "TALEND",
+                      "NM1_08_description": "Identification Code Qualifier",
+                      "NM1_08": "46",
+                      "NM1_08_code_46": "Electronic Transmitter Identification Number (ETIN)",
+                      "NM1_09_description": "Identification Code",
+                      "NM1_09": "133052274"
+                    },
+                    {
+                      "PER": "Administrative Communications Contact",
+                      "PER_01_description": "Contact Function Code",
+                      "PER_01": "IC",
+                      "PER_01_code_IC": "Information Contact",
+                      "PER_02_description": "Name",
+                      "PER_02": "SAMBIT",
+                      "PER_03_description": "Communication Number Qualifier",
+                      "PER_03": "TE",
+                      "PER_03_code_TE": "Telephone",
+                      "PER_04_description": "Communication Number",
+                      "PER_04": "3143202264",
+                      "PER_05_description": "Communication Number Qualifier",
+                      "PER_05": "EX",
+                      "PER_05_code_EX": "Telephone Extension",
+                      "PER_06_description": "Communication Number",
+                      "PER_06": "8099264"
+                    }
+                  ]
+                },
+                {
+                  "NM1-1000B_loop": [
+                    {
+                      "NM1": "Individual or Organizational Name",
+                      "NM1_01_description": "Entity Identifier Code",
+                      "NM1_01": "40",
+                      "NM1_01_code_40": "Receiver",
+                      "NM1_02_description": "Entity Type Qualifier",
+                      "NM1_02": "2",
+                      "NM1_02_code_2": "Non-Person Entity",
+                      "NM1_03_description": "Name Last or Organization Name",
+                      "NM1_03": "CENTENE CORP",
+                      "NM1_08_description": "Identification Code Qualifier",
+                      "NM1_08": "46",
+                      "NM1_08_code_46": "Electronic Transmitter Identification Number (ETIN)",
+                      "NM1_09_description": "Identification Code",
+                      "NM1_09": "421406317"
+                    }
+                  ]
+                },
+                {
+                  "HL-2000A_loop": [
+                    {
+                      "HL": "Hierarchical Level",
+                      "HL_01_description": "Hierarchical ID Number",
+                      "HL_01": "1",
+                      "HL_03_description": "Hierarchical Level Code",
+                      "HL_03": "20",
+                      "HL_03_code_20": "Information Source",
+                      "HL_04_description": "Hierarchical Child Code",
+                      "HL_04": "1",
+                      "HL_04_code_1": "Additional Subordinate HL Data Segment in This Hierarchical Structure."
+                    },
+                    {
+                      "PRV": "Provider Information",
+                      "PRV_01_description": "Provider Code",
+                      "PRV_01": "BI",
+                      "PRV_01_code_BI": "Billing",
+                      "PRV_02_description": "Reference Identification Qualifier",
+                      "PRV_02": "PXC",
+                      "PRV_02_code_PXC": "Health Care Provider Taxonomy Code",
+                      "PRV_03_description": "Reference Identification",
+                      "PRV_03": "273R00000X"
+                    },
+                    {
+                      "NM1-2010AA_loop": [
+                        {
+                          "NM1": "Individual or Organizational Name",
+                          "NM1_01_description": "Entity Identifier Code",
+                          "NM1_01": "85",
+                          "NM1_01_code_85": "Billing Provider",
+                          "NM1_02_description": "Entity Type Qualifier",
+                          "NM1_02": "2",
+                          "NM1_02_code_2": "Non-Person Entity",
+                          "NM1_03_description": "Name Last or Organization Name",
+                          "NM1_03": "Test Provider",
+                          "NM1_08_description": "Identification Code Qualifier",
+                          "NM1_08": "XX",
+                          "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                          "NM1_09_description": "Identification Code",
+                          "NM1_09": "9999999999"
+                        },
+                        {
+                          "N3": "Party Location",
+                          "N3_01_description": "Address Information",
+                          "N3_01": "123 MAIN STREET"
+                        },
+                        {
+                          "N4": "Geographic Location",
+                          "N4_01_description": "City Name",
+                          "N4_01": "WOODSTOCK",
+                          "N4_02_description": "State or Province Code",
+                          "N4_02": "IL",
+                          "N4_03_description": "Postal Code",
+                          "N4_03": "600980000"
+                        },
+                        {
+                          "REF": "Reference Information",
+                          "REF_01_description": "Reference Identification Qualifier",
+                          "REF_01": "EI",
+                          "REF_01_code_EI": "Employer's Identification Number",
+                          "REF_02_description": "Reference Identification",
+                          "REF_02": "999999999"
+                        }
+                      ]
+                    },
+                    {
+                      "HL-2000B_loop": [
+                        {
+                          "HL": "Hierarchical Level",
+                          "HL_01_description": "Hierarchical ID Number",
+                          "HL_01": "2",
+                          "HL_02_description": "Hierarchical Parent ID Number",
+                          "HL_02": "1",
+                          "HL_03_description": "Hierarchical Level Code",
+                          "HL_03": "22",
+                          "HL_03_code_22": "Subscriber",
+                          "HL_04_description": "Hierarchical Child Code",
+                          "HL_04": "0",
+                          "HL_04_code_0": "No Subordinate HL Segment in This Hierarchical Structure."
+                        },
+                        {
+                          "SBR": "Subscriber Information",
+                          "SBR_01_description": "Payer Responsibility Sequence Number Code",
+                          "SBR_01": "P",
+                          "SBR_01_code_P": "Primary",
+                          "SBR_02_description": "Individual Relationship Code",
+                          "SBR_02": "18",
+                          "SBR_02_code_18": "Self",
+                          "SBR_04_description": "Name",
+                          "SBR_04": "MEDICAID",
+                          "SBR_09_description": "Claim Filing Indicator Code",
+                          "SBR_09": "MC",
+                          "SBR_09_code_MC": "Medicaid"
+                        },
+                        {
+                          "NM1-2010BA_loop": [
+                            {
+                              "NM1": "Individual or Organizational Name",
+                              "NM1_01_description": "Entity Identifier Code",
+                              "NM1_01": "IL",
+                              "NM1_01_code_IL": "Insured or Subscriber",
+                              "NM1_02_description": "Entity Type Qualifier",
+                              "NM1_02": "1",
+                              "NM1_02_code_1": "Person",
+                              "NM1_03_description": "Name Last or Organization Name",
+                              "NM1_03": "TEST",
+                              "NM1_04_description": "Name First",
+                              "NM1_04": "MEMBER",
+                              "NM1_08_description": "Identification Code Qualifier",
+                              "NM1_08": "MI",
+                              "NM1_08_code_MI": "Member Identification Number",
+                              "NM1_09_description": "Identification Code",
+                              "NM1_09": "U0000000001"
+                            },
+                            {
+                              "N3": "Party Location",
+                              "N3_01_description": "Address Information",
+                              "N3_01": "123 MAIN STREET"
+                            },
+                            {
+                              "N4": "Geographic Location",
+                              "N4_01_description": "City Name",
+                              "N4_01": "Elgin",
+                              "N4_02_description": "State or Province Code",
+                              "N4_02": "IL",
+                              "N4_03_description": "Postal Code",
+                              "N4_03": "601200001"
+                            },
+                            {
+                              "DMG": "Demographic Information",
+                              "DMG_01_description": "Date Time Period Format Qualifier",
+                              "DMG_01": "D8",
+                              "DMG_01_code_D8": "Date Expressed in Format CCYYMMDD",
+                              "DMG_02_description": "Date Time Period",
+                              "DMG_02": "19960215",
+                              "DMG_03_description": "Gender Code",
+                              "DMG_03": "F",
+                              "DMG_03_code_F": "Female"
+                            }
+                          ]
+                        },
+                        {
+                          "NM1-2010BB_loop": [
+                            {
+                              "NM1": "Individual or Organizational Name",
+                              "NM1_01_description": "Entity Identifier Code",
+                              "NM1_01": "PR",
+                              "NM1_01_code_PR": "Payer",
+                              "NM1_02_description": "Entity Type Qualifier",
+                              "NM1_02": "2",
+                              "NM1_02_code_2": "Non-Person Entity",
+                              "NM1_03_description": "Name Last or Organization Name",
+                              "NM1_03": "CENTENE",
+                              "NM1_08_description": "Identification Code Qualifier",
+                              "NM1_08": "PI",
+                              "NM1_08_code_PI": "Payor Identification",
+                              "NM1_09_description": "Identification Code",
+                              "NM1_09": "421406317"
+                            },
+                            {
+                              "N3": "Party Location",
+                              "N3_01_description": "Address Information",
+                              "N3_01": "123 MAIN STREET"
+                            },
+                            {
+                              "N4": "Geographic Location",
+                              "N4_01_description": "City Name",
+                              "N4_01": "CITYNAME",
+                              "N4_02_description": "State or Province Code",
+                              "N4_02": "NA",
+                              "N4_03_description": "Postal Code",
+                              "N4_03": "000000000"
+                            }
+                          ]
+                        },
+                        {
+                          "CLM-2300_loop": [
+                            {
+                              "CLM": "Health Claim",
+                              "CLM_01_description": "Claim Submitter's Identifier",
+                              "CLM_01": "TD-R192ICE00087",
+                              "CLM_02_description": "Monetary Amount",
+                              "CLM_02": "17166.7",
+                              "CLM_05_description": "Health Care Service Location Information",
+                              "CLM_05": {
+                                "CLM_05_01_description": "Facility Code Value",
+                                "CLM_05_01": "11",
+                                "CLM_05_02_description": "Facility Code Qualifier",
+                                "CLM_05_02": "A",
+                                "CLM_05_02_code_A": "Uniform Billing Claim Form Bill Type",
+                                "CLM_05_03_description": "Claim Frequency Type Code",
+                                "CLM_05_03": "1"
+                              },
+                              "CLM_07_description": "Provider Accept Assignment Code",
+                              "CLM_07": "A",
+                              "CLM_07_code_A": "Assigned",
+                              "CLM_08_description": "Yes/No Condition or Response Code",
+                              "CLM_08": "Y",
+                              "CLM_08_code_Y": "Yes",
+                              "CLM_09_description": "Release of Information Code",
+                              "CLM_09": "Y",
+                              "CLM_09_code_Y": "Yes, Provider has a Signed Statement Permitting Release of Medical Billing Data Related to a Claim"
+                            },
+                            {
+                              "DTP": "Date or Time or Period",
+                              "DTP_01_description": "Date/Time Qualifier",
+                              "DTP_01": "096",
+                              "DTP_01_code_096": "Discharge",
+                              "DTP_02_description": "Date Time Period Format Qualifier",
+                              "DTP_02": "TM",
+                              "DTP_02_code_TM": "Time Expressed in Format HHMM",
+                              "DTP_03_description": "Date Time Period",
+                              "DTP_03": "0900"
+                            },
+                            {
+                              "DTP": "Date or Time or Period",
+                              "DTP_01_description": "Date/Time Qualifier",
+                              "DTP_01": "434",
+                              "DTP_01_code_434": "Statement",
+                              "DTP_02_description": "Date Time Period Format Qualifier",
+                              "DTP_02": "RD8",
+                              "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                              "DTP_03_description": "Date Time Period",
+                              "DTP_03": "20180628-20180702"
+                            },
+                            {
+                              "DTP": "Date or Time or Period",
+                              "DTP_01_description": "Date/Time Qualifier",
+                              "DTP_01": "435",
+                              "DTP_01_code_435": "Admission",
+                              "DTP_02_description": "Date Time Period Format Qualifier",
+                              "DTP_02": "DT",
+                              "DTP_02_code_DT": "Date and Time Expressed in Format CCYYMMDDHHMM",
+                              "DTP_03_description": "Date Time Period",
+                              "DTP_03": "201806280800"
+                            },
+                            {
+                              "CL1": "Claim Codes",
+                              "CL1_01_description": "Admission Type Code",
+                              "CL1_01": "1",
+                              "CL1_02_description": "Admission Source Code",
+                              "CL1_02": "1",
+                              "CL1_03_description": "Patient Status Code",
+                              "CL1_03": "01"
+                            },
+                            {
+                              "REF": "Reference Information",
+                              "REF_01_description": "Reference Identification Qualifier",
+                              "REF_01": "D9",
+                              "REF_01_code_D9": "Claim Number",
+                              "REF_02_description": "Reference Identification",
+                              "REF_02": "TD-R192ICE00087"
+                            },
+                            {
+                              "HI": "Health Care Information Codes",
+                              "HI_01_description": "Health Care Code Information",
+                              "HI_01": {
+                                "HI_01_01_description": "Code List Qualifier Code",
+                                "HI_01_01": "ABK",
+                                "HI_01_01_code_ABK": "International Classification of Diseases Clinical Modification (ICD-10-CM) Principal Diagnosis",
+                                "HI_01_02_description": "Industry Code",
+                                "HI_01_02": "F39",
+                                "HI_01_09_description": "Industry Code",
+                                "HI_01_09": "Y"
+                              }
+                            },
+                            {
+                              "HI": "Health Care Information Codes",
+                              "HI_01_description": "Health Care Code Information",
+                              "HI_01": {
+                                "HI_01_01_description": "Code List Qualifier Code",
+                                "HI_01_01": "ABJ",
+                                "HI_01_01_code_ABJ": "International Classification of Diseases Clinical Modification (ICD-10-CM) Admitting Diagnosis",
+                                "HI_01_02_description": "Industry Code",
+                                "HI_01_02": "F39"
+                              }
+                            },
+                            {
+                              "HI": "Health Care Information Codes",
+                              "HI_01_description": "Health Care Code Information",
+                              "HI_01": {
+                                "HI_01_01_description": "Code List Qualifier Code",
+                                "HI_01_01": "DR",
+                                "HI_01_01_code_DR": "Diagnosis Related Group (DRG)",
+                                "HI_01_02_description": "Industry Code",
+                                "HI_01_02": "885"
+                              }
+                            },
+                            {
+                              "HI": "Health Care Information Codes",
+                              "HI_01_description": "Health Care Code Information",
+                              "HI_01": {
+                                "HI_01_01_description": "Code List Qualifier Code",
+                                "HI_01_01": "ABF",
+                                "HI_01_01_code_ABF": "International Classification of Diseases Clinical Modification (ICD-10-CM) Diagnosis",
+                                "HI_01_02_description": "Industry Code",
+                                "HI_01_02": "F1319",
+                                "HI_01_09_description": "Industry Code",
+                                "HI_01_09": "Y"
+                              },
+                              "HI_02_description": "Health Care Code Information",
+                              "HI_02": {
+                                "HI_02_01_description": "Code List Qualifier Code",
+                                "HI_02_01": "ABF",
+                                "HI_02_01_code_ABF": "International Classification of Diseases Clinical Modification (ICD-10-CM) Diagnosis",
+                                "HI_02_02_description": "Industry Code",
+                                "HI_02_02": "F419",
+                                "HI_02_09_description": "Industry Code",
+                                "HI_02_09": "Y"
+                              },
+                              "HI_03_description": "Health Care Code Information",
+                              "HI_03": {
+                                "HI_03_01_description": "Code List Qualifier Code",
+                                "HI_03_01": "ABF",
+                                "HI_03_01_code_ABF": "International Classification of Diseases Clinical Modification (ICD-10-CM) Diagnosis",
+                                "HI_03_02_description": "Industry Code",
+                                "HI_03_02": "F17210",
+                                "HI_03_09_description": "Industry Code",
+                                "HI_03_09": "Y"
+                              },
+                              "HI_04_description": "Health Care Code Information",
+                              "HI_04": {
+                                "HI_04_01_description": "Code List Qualifier Code",
+                                "HI_04_01": "ABF",
+                                "HI_04_01_code_ABF": "International Classification of Diseases Clinical Modification (ICD-10-CM) Diagnosis",
+                                "HI_04_02_description": "Industry Code",
+                                "HI_04_02": "E876",
+                                "HI_04_09_description": "Industry Code",
+                                "HI_04_09": "N"
+                              }
+                            },
+                            {
+                              "HI": "Health Care Information Codes",
+                              "HI_01_description": "Health Care Code Information",
+                              "HI_01": {
+                                "HI_01_01_description": "Code List Qualifier Code",
+                                "HI_01_01": "BE",
+                                "HI_01_01_code_BE": "Value",
+                                "HI_01_02_description": "Industry Code",
+                                "HI_01_02": "01",
+                                "HI_01_05_description": "Monetary Amount",
+                                "HI_01_05": "1563"
+                              },
+                              "HI_02_description": "Health Care Code Information",
+                              "HI_02": {
+                                "HI_02_01_description": "Code List Qualifier Code",
+                                "HI_02_01": "BE",
+                                "HI_02_01_code_BE": "Value",
+                                "HI_02_02_description": "Industry Code",
+                                "HI_02_02": "80",
+                                "HI_02_05_description": "Monetary Amount",
+                                "HI_02_05": "4"
+                              }
+                            },
+                            {
+                              "NM1-2310E_loop": [
+                                {
+                                  "NM1": "Individual or Organizational Name",
+                                  "NM1_01_description": "Entity Identifier Code",
+                                  "NM1_01": "77",
+                                  "NM1_01_code_77": "Service Location",
+                                  "NM1_02_description": "Entity Type Qualifier",
+                                  "NM1_02": "2",
+                                  "NM1_02_code_2": "Non-Person Entity",
+                                  "NM1_03_description": "Name Last or Organization Name",
+                                  "NM1_03": "BETHANY HOMES AND METHODIST HOSPITAL"
+                                },
+                                {
+                                  "N3": "Party Location",
+                                  "N3_01_description": "Address Information",
+                                  "N3_01": "240 WILSON RD"
+                                },
+                                {
+                                  "N4": "Geographic Location",
+                                  "N4_01_description": "City Name",
+                                  "N4_01": "CHICAGO",
+                                  "N4_02_description": "State or Province Code",
+                                  "N4_02": "IL",
+                                  "N4_03_description": "Postal Code",
+                                  "N4_03": "606400000"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "1"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0124",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "9148",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "4"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "2"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0250",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "48.1",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "28"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "3"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0260",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "133",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "1"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "4"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0300",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "32.9",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "1"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "5"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0301",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "798.5",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "4"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "6"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0305",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "200.6",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "2"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "7"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0306",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "175",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "1"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "8"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0307",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "113.6",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "2"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            },
+                            {
+                              "LX-2400_loop": [
+                                {
+                                  "LX": "Transaction Set Line Number",
+                                  "LX_01_description": "Assigned Number",
+                                  "LX_01": "9"
+                                },
+                                {
+                                  "SV2": "Institutional Service",
+                                  "SV2_01_description": "Product/Service ID",
+                                  "SV2_01": "0351",
+                                  "SV2_03_description": "Monetary Amount",
+                                  "SV2_03": "6517",
+                                  "SV2_04_description": "Unit or Basis for Measurement Code",
+                                  "SV2_04": "UN",
+                                  "SV2_04_code_UN": "Unit",
+                                  "SV2_05_description": "Quantity",
+                                  "SV2_05": "2"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20180628-20180702"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

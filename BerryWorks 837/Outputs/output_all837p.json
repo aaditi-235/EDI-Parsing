@@ -1,0 +1,1638 @@
+{
+  "interchanges": [
+    {
+      "ISA": "Interchange Control Header",
+      "ISA_01_AuthorizationQualifier": "00",
+      "ISA_02_AuthorizationInformation": "          ",
+      "ISA_03_SecurityQualifier": "00",
+      "ISA_04_SecurityInformation": "          ",
+      "ISA_05_SenderQualifier": "01",
+      "ISA_06_SenderId": "1234567890123  ",
+      "ISA_07_ReceiverQualifier": "01",
+      "ISA_08_ReceiverId": "9876543210987  ",
+      "ISA_09_Date": "210201",
+      "ISA_10_Time": "1234",
+      "ISA_11_StandardsId": "U",
+      "ISA_12_Version": "00501",
+      "ISA_13_InterchangeControlNumber": "000000001",
+      "ISA_14_AcknowledgmentRequested": "0",
+      "ISA_15_TestIndicator": "T",
+      "functional_groups": [
+        {
+          "GS": "Functional Group Header",
+          "GS_01_FunctionalIdentifierCode": "HC",
+          "GS_02_ApplicationSenderCode": "1234567890123",
+          "GS_03_ApplicationReceiverCode": "9876543210987",
+          "GS_04_Date": "20210201",
+          "GS_05_Time": "1234",
+          "GS_06_GroupControlNumber": "1",
+          "GS_07_ResponsibleAgencyCode": "X",
+          "GS_08_Version": "005010X222A1",
+          "transactions": [
+            {
+              "837": "Health Care Claim",
+              "ST": "Transaction Set Header",
+              "ST_01_TransactionSetIdentifierCode": "837",
+              "ST_02_TransactionSetControlNumber": "0001",
+              "ST_03_ImplementationConventionReference": "005010X222A1",
+              "segments": [
+                {
+                  "BHT": "Beginning of Hierarchical Transaction",
+                  "BHT_01_description": "Hierarchical Structure Code",
+                  "BHT_01": "0019",
+                  "BHT_01_code_0019": "Information Source, Subscriber, Dependent",
+                  "BHT_02_description": "Transaction Set Purpose Code",
+                  "BHT_02": "00",
+                  "BHT_02_code_00": "Original",
+                  "BHT_03_description": "Reference Identification",
+                  "BHT_03": "123456789",
+                  "BHT_04_description": "Date",
+                  "BHT_04": "20210201",
+                  "BHT_05_description": "Time",
+                  "BHT_05": "1234",
+                  "BHT_06_description": "Transaction Type Code",
+                  "BHT_06": "CH",
+                  "BHT_06_code_CH": "Chargeable"
+                },
+                {
+                  "NM1-1000A_loop": [
+                    {
+                      "NM1": "Individual or Organizational Name",
+                      "NM1_01_description": "Entity Identifier Code",
+                      "NM1_01": "41",
+                      "NM1_01_code_41": "Submitter",
+                      "NM1_02_description": "Entity Type Qualifier",
+                      "NM1_02": "2",
+                      "NM1_02_code_2": "Non-Person Entity",
+                      "NM1_03_description": "Name Last or Organization Name",
+                      "NM1_03": "SUBMITTER ORG",
+                      "NM1_08_description": "Identification Code Qualifier",
+                      "NM1_08": "46",
+                      "NM1_08_code_46": "Electronic Transmitter Identification Number (ETIN)",
+                      "NM1_09_description": "Identification Code",
+                      "NM1_09": "SUBMITTERID"
+                    },
+                    {
+                      "PER": "Administrative Communications Contact",
+                      "PER_01_description": "Contact Function Code",
+                      "PER_01": "IC",
+                      "PER_01_code_IC": "Information Contact",
+                      "PER_02_description": "Name",
+                      "PER_02": "CONTACT NAME",
+                      "PER_03_description": "Communication Number Qualifier",
+                      "PER_03": "TE",
+                      "PER_03_code_TE": "Telephone",
+                      "PER_04_description": "Communication Number",
+                      "PER_04": "8001234567"
+                    }
+                  ]
+                },
+                {
+                  "NM1-1000B_loop": [
+                    {
+                      "NM1": "Individual or Organizational Name",
+                      "NM1_01_description": "Entity Identifier Code",
+                      "NM1_01": "40",
+                      "NM1_01_code_40": "Receiver",
+                      "NM1_02_description": "Entity Type Qualifier",
+                      "NM1_02": "2",
+                      "NM1_02_code_2": "Non-Person Entity",
+                      "NM1_03_description": "Name Last or Organization Name",
+                      "NM1_03": "RECEIVER ORG",
+                      "NM1_08_description": "Identification Code Qualifier",
+                      "NM1_08": "46",
+                      "NM1_08_code_46": "Electronic Transmitter Identification Number (ETIN)",
+                      "NM1_09_description": "Identification Code",
+                      "NM1_09": "RECEIVERID"
+                    }
+                  ]
+                },
+                {
+                  "HL-2000A_loop": [
+                    {
+                      "HL": "Hierarchical Level",
+                      "HL_01_description": "Hierarchical ID Number",
+                      "HL_01": "1",
+                      "HL_03_description": "Hierarchical Level Code",
+                      "HL_03": "20",
+                      "HL_03_code_20": "Information Source",
+                      "HL_04_description": "Hierarchical Child Code",
+                      "HL_04": "1",
+                      "HL_04_code_1": "Additional Subordinate HL Data Segment in This Hierarchical Structure."
+                    },
+                    {
+                      "PRV": "Provider Information",
+                      "PRV_01_description": "Provider Code",
+                      "PRV_01": "BI",
+                      "PRV_01_code_BI": "Billing",
+                      "PRV_02_description": "Reference Identification Qualifier",
+                      "PRV_02": "PXC",
+                      "PRV_02_code_PXC": "Health Care Provider Taxonomy Code",
+                      "PRV_03_description": "Reference Identification",
+                      "PRV_03": "PROVSPCL1"
+                    },
+                    {
+                      "N3": "Party Location",
+                      "N3_01_description": "Address Information",
+                      "N3_01": "100 MAIN ST"
+                    },
+                    {
+                      "N4": "Geographic Location",
+                      "N4_01_description": "City Name",
+                      "N4_01": "CITY",
+                      "N4_02_description": "State or Province Code",
+                      "N4_02": "ST",
+                      "N4_03_description": "Postal Code",
+                      "N4_03": "12345"
+                    },
+                    {
+                      "NM1-2010AA_loop": [
+                        {
+                          "NM1": "Individual or Organizational Name",
+                          "NM1_01_description": "Entity Identifier Code",
+                          "NM1_01": "85",
+                          "NM1_01_code_85": "Billing Provider",
+                          "NM1_02_description": "Entity Type Qualifier",
+                          "NM1_02": "2",
+                          "NM1_02_code_2": "Non-Person Entity",
+                          "NM1_03_description": "Name Last or Organization Name",
+                          "NM1_03": "BILLING PROVIDER NAME",
+                          "NM1_08_description": "Identification Code Qualifier",
+                          "NM1_08": "XX",
+                          "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                          "NM1_09_description": "Identification Code",
+                          "NM1_09": "NPI1234567890"
+                        },
+                        {
+                          "REF": "Reference Information",
+                          "REF_01_description": "Reference Identification Qualifier",
+                          "REF_01": "EI",
+                          "REF_01_code_EI": "Employer's Identification Number",
+                          "REF_02_description": "Reference Identification",
+                          "REF_02": "TAXID123456"
+                        },
+                        {
+                          "PER": "Administrative Communications Contact",
+                          "PER_01_description": "Contact Function Code",
+                          "PER_01": "IC",
+                          "PER_01_code_IC": "Information Contact",
+                          "PER_02_description": "Name",
+                          "PER_02": "BILL CONTACT",
+                          "PER_03_description": "Communication Number Qualifier",
+                          "PER_03": "TE",
+                          "PER_03_code_TE": "Telephone",
+                          "PER_04_description": "Communication Number",
+                          "PER_04": "8009876543"
+                        }
+                      ]
+                    },
+                    {
+                      "NM1-2010AB_loop": [
+                        {
+                          "NM1": "Individual or Organizational Name",
+                          "NM1_01_description": "Entity Identifier Code",
+                          "NM1_01": "87",
+                          "NM1_01_code_87": "Pay-to Provider",
+                          "NM1_02_description": "Entity Type Qualifier",
+                          "NM1_02": "2",
+                          "NM1_02_code_2": "Non-Person Entity",
+                          "NM1_03_description": "Name Last or Organization Name",
+                          "NM1_03": "PAYTO PROVIDER NAME",
+                          "NM1_08_description": "Identification Code Qualifier",
+                          "NM1_08": "XX",
+                          "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                          "NM1_09_description": "Identification Code",
+                          "NM1_09": "NPI0987654321"
+                        }
+                      ]
+                    },
+                    {
+                      "NM1-2010_loop": [
+                        {
+                          "NM1": "Individual or Organizational Name",
+                          "NM1_01_description": "Entity Identifier Code",
+                          "NM1_01": "XX",
+                          "NM1_01_code_XX": "Business Area",
+                          "NM1_02_description": "Entity Type Qualifier",
+                          "NM1_02": "2",
+                          "NM1_02_code_2": "Non-Person Entity",
+                          "NM1_03_description": "Name Last or Organization Name",
+                          "NM1_03": "PLACEHOLDER ORG",
+                          "NM1_08_description": "Identification Code Qualifier",
+                          "NM1_08": "XX",
+                          "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                          "NM1_09_description": "Identification Code",
+                          "NM1_09": "PLCHDRID"
+                        }
+                      ]
+                    },
+                    {
+                      "HL-2000B_loop": [
+                        {
+                          "HL": "Hierarchical Level",
+                          "HL_01_description": "Hierarchical ID Number",
+                          "HL_01": "2",
+                          "HL_02_description": "Hierarchical Parent ID Number",
+                          "HL_02": "1",
+                          "HL_03_description": "Hierarchical Level Code",
+                          "HL_03": "22",
+                          "HL_03_code_22": "Subscriber",
+                          "HL_04_description": "Hierarchical Child Code",
+                          "HL_04": "0",
+                          "HL_04_code_0": "No Subordinate HL Segment in This Hierarchical Structure."
+                        },
+                        {
+                          "SBR": "Subscriber Information",
+                          "SBR_01_description": "Payer Responsibility Sequence Number Code",
+                          "SBR_01": "P",
+                          "SBR_01_code_P": "Primary",
+                          "SBR_02_description": "Individual Relationship Code",
+                          "SBR_02": "18",
+                          "SBR_02_code_18": "Self",
+                          "SBR_03_description": "Reference Identification",
+                          "SBR_03": "SUBSCRIBERID",
+                          "SBR_09_description": "Claim Filing Indicator Code",
+                          "SBR_09": "MB",
+                          "SBR_09_code_MB": "Medicare Part B"
+                        },
+                        {
+                          "PAT": "Patient Information",
+                          "PAT_01_description": "Individual Relationship Code",
+                          "PAT_01": "19",
+                          "PAT_01_code_19": "Child"
+                        },
+                        {
+                          "N3": "Party Location",
+                          "N3_01_description": "Address Information",
+                          "N3_01": "200 SECOND ST"
+                        },
+                        {
+                          "N4": "Geographic Location",
+                          "N4_01_description": "City Name",
+                          "N4_01": "CITY",
+                          "N4_02_description": "State or Province Code",
+                          "N4_02": "ST",
+                          "N4_03_description": "Postal Code",
+                          "N4_03": "12345"
+                        },
+                        {
+                          "NM1-2010BA_loop": [
+                            {
+                              "NM1": "Individual or Organizational Name",
+                              "NM1_01_description": "Entity Identifier Code",
+                              "NM1_01": "IL",
+                              "NM1_01_code_IL": "Insured or Subscriber",
+                              "NM1_02_description": "Entity Type Qualifier",
+                              "NM1_02": "1",
+                              "NM1_02_code_1": "Person",
+                              "NM1_03_description": "Name Last or Organization Name",
+                              "NM1_03": "DOE",
+                              "NM1_04_description": "Name First",
+                              "NM1_04": "JOHN",
+                              "NM1_07_description": "Name Suffix",
+                              "NM1_07": "MI",
+                              "NM1_08_description": "Identification Code Qualifier",
+                              "NM1_08": "SUB123456"
+                            },
+                            {
+                              "DMG": "Demographic Information",
+                              "DMG_01_description": "Date Time Period Format Qualifier",
+                              "DMG_01": "D8",
+                              "DMG_01_code_D8": "Date Expressed in Format CCYYMMDD",
+                              "DMG_02_description": "Date Time Period",
+                              "DMG_02": "19700101",
+                              "DMG_03_description": "Gender Code",
+                              "DMG_03": "M",
+                              "DMG_03_code_M": "Male"
+                            },
+                            {
+                              "REF": "Reference Information",
+                              "REF_01_description": "Reference Identification Qualifier",
+                              "REF_01": "1L",
+                              "REF_01_code_1L": "Group or Policy Number",
+                              "REF_02_description": "Reference Identification",
+                              "REF_02": "SUBREFID"
+                            },
+                            {
+                              "PER": "Administrative Communications Contact",
+                              "PER_01_description": "Contact Function Code",
+                              "PER_01": "IC",
+                              "PER_01_code_IC": "Information Contact",
+                              "PER_02_description": "Name",
+                              "PER_02": "SUB CONTACT",
+                              "PER_03_description": "Communication Number Qualifier",
+                              "PER_03": "TE",
+                              "PER_03_code_TE": "Telephone",
+                              "PER_04_description": "Communication Number",
+                              "PER_04": "8001112222"
+                            },
+                            {
+                              "N3": "Party Location",
+                              "N3_01_description": "Address Information",
+                              "N3_01": "300 THIRD ST"
+                            },
+                            {
+                              "N4": "Geographic Location",
+                              "N4_01_description": "City Name",
+                              "N4_01": "CITY",
+                              "N4_02_description": "State or Province Code",
+                              "N4_02": "ST",
+                              "N4_03_description": "Postal Code",
+                              "N4_03": "12345"
+                            }
+                          ]
+                        },
+                        {
+                          "NM1-2010BB_loop": [
+                            {
+                              "NM1": "Individual or Organizational Name",
+                              "NM1_01_description": "Entity Identifier Code",
+                              "NM1_01": "PR",
+                              "NM1_01_code_PR": "Payer",
+                              "NM1_02_description": "Entity Type Qualifier",
+                              "NM1_02": "2",
+                              "NM1_02_code_2": "Non-Person Entity",
+                              "NM1_03_description": "Name Last or Organization Name",
+                              "NM1_03": "PAYER ORG",
+                              "NM1_08_description": "Identification Code Qualifier",
+                              "NM1_08": "PI",
+                              "NM1_08_code_PI": "Payor Identification",
+                              "NM1_09_description": "Identification Code",
+                              "NM1_09": "PAYERID"
+                            },
+                            {
+                              "REF": "Reference Information",
+                              "REF_01_description": "Reference Identification Qualifier",
+                              "REF_01": "G2",
+                              "REF_01_code_G2": "Provider Commercial Number",
+                              "REF_02_description": "Reference Identification",
+                              "REF_02": "PAYERREF"
+                            }
+                          ]
+                        },
+                        {
+                          "HL-2000C_loop": [
+                            {
+                              "HL": "Hierarchical Level",
+                              "HL_01_description": "Hierarchical ID Number",
+                              "HL_01": "3",
+                              "HL_02_description": "Hierarchical Parent ID Number",
+                              "HL_02": "2",
+                              "HL_03_description": "Hierarchical Level Code",
+                              "HL_03": "23",
+                              "HL_03_code_23": "Dependent",
+                              "HL_04_description": "Hierarchical Child Code",
+                              "HL_04": "0",
+                              "HL_04_code_0": "No Subordinate HL Segment in This Hierarchical Structure."
+                            },
+                            {
+                              "PAT": "Patient Information",
+                              "PAT_01_description": "Individual Relationship Code",
+                              "PAT_01": "19",
+                              "PAT_01_code_19": "Child"
+                            },
+                            {
+                              "N3": "Party Location",
+                              "N3_01_description": "Address Information",
+                              "N3_01": "400 FOURTH ST"
+                            },
+                            {
+                              "N4": "Geographic Location",
+                              "N4_01_description": "City Name",
+                              "N4_01": "CITY",
+                              "N4_02_description": "State or Province Code",
+                              "N4_02": "ST",
+                              "N4_03_description": "Postal Code",
+                              "N4_03": "12345"
+                            },
+                            {
+                              "NM1-2010CA_loop": [
+                                {
+                                  "NM1": "Individual or Organizational Name",
+                                  "NM1_01_description": "Entity Identifier Code",
+                                  "NM1_01": "QC",
+                                  "NM1_01_code_QC": "Patient",
+                                  "NM1_02_description": "Entity Type Qualifier",
+                                  "NM1_02": "1",
+                                  "NM1_02_code_1": "Person",
+                                  "NM1_03_description": "Name Last or Organization Name",
+                                  "NM1_03": "DOE",
+                                  "NM1_04_description": "Name First",
+                                  "NM1_04": "JANE",
+                                  "NM1_07_description": "Name Suffix",
+                                  "NM1_07": "MI",
+                                  "NM1_08_description": "Identification Code Qualifier",
+                                  "NM1_08": "PATIENTID"
+                                },
+                                {
+                                  "REF": "Reference Information",
+                                  "REF_01_description": "Reference Identification Qualifier",
+                                  "REF_01": "1G",
+                                  "REF_01_code_1G": "Provider UPIN Number",
+                                  "REF_02_description": "Reference Identification",
+                                  "REF_02": "PATREFID"
+                                },
+                                {
+                                  "PER": "Administrative Communications Contact",
+                                  "PER_01_description": "Contact Function Code",
+                                  "PER_01": "IC",
+                                  "PER_01_code_IC": "Information Contact",
+                                  "PER_02_description": "Name",
+                                  "PER_02": "PATIENT CONTACT",
+                                  "PER_03_description": "Communication Number Qualifier",
+                                  "PER_03": "TE",
+                                  "PER_03_code_TE": "Telephone",
+                                  "PER_04_description": "Communication Number",
+                                  "PER_04": "8003334444"
+                                }
+                              ]
+                            },
+                            {
+                              "CLM-2300_loop": [
+                                {
+                                  "CLM": "Health Claim",
+                                  "CLM_01_description": "Claim Submitter's Identifier",
+                                  "CLM_01": "CLAIMID001",
+                                  "CLM_02_description": "Monetary Amount",
+                                  "CLM_02": "150.00",
+                                  "CLM_05_description": "Health Care Service Location Information",
+                                  "CLM_05": {
+                                    "CLM_05_01_description": "Facility Code Value",
+                                    "CLM_05_01": "14",
+                                    "CLM_05_02_description": "Facility Code Qualifier",
+                                    "CLM_05_02": "A",
+                                    "CLM_05_02_code_A": "Uniform Billing Claim Form Bill Type",
+                                    "CLM_05_03_description": "Claim Frequency Type Code",
+                                    "CLM_05_03": "1"
+                                  },
+                                  "CLM_07_description": "Provider Accept Assignment Code",
+                                  "CLM_07": "A",
+                                  "CLM_07_code_A": "Assigned",
+                                  "CLM_08_description": "Yes/No Condition or Response Code",
+                                  "CLM_08": "Y",
+                                  "CLM_08_code_Y": "Yes",
+                                  "CLM_09_description": "Release of Information Code",
+                                  "CLM_09": "Y",
+                                  "CLM_09_code_Y": "Yes, Provider has a Signed Statement Permitting Release of Medical Billing Data Related to a Claim"
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "434",
+                                  "DTP_01_code_434": "Statement",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "RD8",
+                                  "DTP_02_code_RD8": "Range of Dates Expressed in Format CCYYMMDD-CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20210201-20210201"
+                                },
+                                {
+                                  "PWK": "Paperwork",
+                                  "PWK_01_description": "Report Type Code",
+                                  "PWK_01": "ABC",
+                                  "PWK_02_description": "Report Transmission Code",
+                                  "PWK_02": "DETAILS"
+                                },
+                                {
+                                  "CN1": "Contract Information",
+                                  "CN1_01_description": "Contract Type Code",
+                                  "CN1_01": "1",
+                                  "CN1_02_description": "Monetary Amount",
+                                  "CN1_02": "9",
+                                  "CN1_03_description": "Percent, Decimal Format",
+                                  "CN1_03": "01"
+                                },
+                                {
+                                  "AMT": "Monetary Amount Information",
+                                  "AMT_01_description": "Amount Qualifier Code",
+                                  "AMT_01": "B6",
+                                  "AMT_01_code_B6": "Allowed - Actual",
+                                  "AMT_02_description": "Monetary Amount",
+                                  "AMT_02": "15.00"
+                                },
+                                {
+                                  "REF": "Reference Information",
+                                  "REF_01_description": "Reference Identification Qualifier",
+                                  "REF_01": "F8",
+                                  "REF_01_code_F8": "Original Reference Number",
+                                  "REF_02_description": "Reference Identification",
+                                  "REF_02": "CLAIMREF001"
+                                },
+                                {
+                                  "K3": "File Information",
+                                  "K3_01_description": "Fixed Format Information",
+                                  "K3_01": "INSTR1"
+                                },
+                                {
+                                  "NTE": "Note/Special Instruction",
+                                  "NTE_01_description": "Note Reference Code",
+                                  "NTE_01": "ADD",
+                                  "NTE_01_code_ADD": "Additional Information",
+                                  "NTE_02_description": "Description",
+                                  "NTE_02": "CLAIM NOTES"
+                                },
+                                {
+                                  "CR1": "Ambulance Certification",
+                                  "CR1_01_description": "Unit or Basis for Measurement Code",
+                                  "CR1_01": "1",
+                                  "CR1_02_description": "Weight",
+                                  "CR1_02": "5",
+                                  "CR1_03_description": "Ambulance Transport Code",
+                                  "CR1_03": "LB"
+                                },
+                                {
+                                  "CR2": "Chiropractic Certification",
+                                  "CR2_01_description": "Count",
+                                  "CR2_01": "1",
+                                  "CR2_02_description": "Quantity",
+                                  "CR2_02": "7",
+                                  "CR2_03_description": "Subluxation Level Code",
+                                  "CR2_03": "LB"
+                                },
+                                {
+                                  "CRC": "Conditions Indicator",
+                                  "CRC_01_description": "Code Category",
+                                  "CRC_01": "AMB",
+                                  "CRC_02_description": "Yes/No Condition or Response Code",
+                                  "CRC_02": "Y",
+                                  "CRC_02_code_Y": "Yes",
+                                  "CRC_03_description": "Condition Indicator",
+                                  "CRC_03": "AMB_CODE1"
+                                },
+                                {
+                                  "CRC": "Conditions Indicator",
+                                  "CRC_01_description": "Code Category",
+                                  "CRC_01": "VIS",
+                                  "CRC_02_description": "Yes/No Condition or Response Code",
+                                  "CRC_02": "Y",
+                                  "CRC_02_code_Y": "Yes",
+                                  "CRC_03_description": "Condition Indicator",
+                                  "CRC_03": "VIS_CODE1"
+                                },
+                                {
+                                  "CRC": "Conditions Indicator",
+                                  "CRC_01_description": "Code Category",
+                                  "CRC_01": "HIC",
+                                  "CRC_02_description": "Yes/No Condition or Response Code",
+                                  "CRC_02": "Y",
+                                  "CRC_02_code_Y": "Yes",
+                                  "CRC_03_description": "Condition Indicator",
+                                  "CRC_03": "HIC_CODE1"
+                                },
+                                {
+                                  "CRC": "Conditions Indicator",
+                                  "CRC_01_description": "Code Category",
+                                  "CRC_01": "EPS",
+                                  "CRC_02_description": "Yes/No Condition or Response Code",
+                                  "CRC_02": "Y",
+                                  "CRC_02_code_Y": "Yes",
+                                  "CRC_03_description": "Condition Indicator",
+                                  "CRC_03": "EPS_CODE1"
+                                },
+                                {
+                                  "HI": "Health Care Information Codes",
+                                  "HI_01_description": "Health Care Code Information",
+                                  "HI_01": {
+                                    "HI_01_01_description": "Code List Qualifier Code",
+                                    "HI_01_01": "BK",
+                                    "HI_01_01_code_BK": "International Classification of Diseases Clinical Modification (ICD-9-CM) Principal Diagnosis",
+                                    "HI_01_02_description": "Industry Code",
+                                    "HI_01_02": "25000"
+                                  }
+                                },
+                                {
+                                  "HI": "Health Care Information Codes",
+                                  "HI_01_description": "Health Care Code Information",
+                                  "HI_01": {
+                                    "HI_01_01_description": "Code List Qualifier Code",
+                                    "HI_01_01": "BF",
+                                    "HI_01_01_code_BF": "International Classification of Diseases Clinical Modification (ICD-9-CM) Diagnosis",
+                                    "HI_01_02_description": "Industry Code",
+                                    "HI_01_02": "4000"
+                                  },
+                                  "HI_02_description": "Health Care Code Information",
+                                  "HI_02": {
+                                    "HI_02_01_description": "Code List Qualifier Code",
+                                    "HI_02_01": "BF",
+                                    "HI_02_01_code_BF": "International Classification of Diseases Clinical Modification (ICD-9-CM) Diagnosis",
+                                    "HI_02_02_description": "Industry Code",
+                                    "HI_02_02": "8000"
+                                  }
+                                },
+                                {
+                                  "HI": "Health Care Information Codes",
+                                  "HI_01_description": "Health Care Code Information",
+                                  "HI_01": {
+                                    "HI_01_01_description": "Code List Qualifier Code",
+                                    "HI_01_01": "BH",
+                                    "HI_01_01_code_BH": "Occurrence",
+                                    "HI_01_02_description": "Industry Code",
+                                    "HI_01_02": "AA",
+                                    "HI_01_03_description": "Date Time Period Format Qualifier",
+                                    "HI_01_03": "D8",
+                                    "HI_01_03_code_D8": "Date Expressed in Format CCYYMMDD"
+                                  },
+                                  "HI_02_description": "Health Care Code Information",
+                                  "HI_02": "20210201",
+                                  "HI_03_description": "Health Care Code Information",
+                                  "HI_03": {
+                                    "HI_03_01_description": "Code List Qualifier Code",
+                                    "HI_03_01": "BH",
+                                    "HI_03_01_code_BH": "Occurrence",
+                                    "HI_03_02_description": "Industry Code",
+                                    "HI_03_02": "BB",
+                                    "HI_03_03_description": "Date Time Period Format Qualifier",
+                                    "HI_03_03": "D8",
+                                    "HI_03_03_code_D8": "Date Expressed in Format CCYYMMDD"
+                                  },
+                                  "HI_04_description": "Health Care Code Information",
+                                  "HI_04": "20210101"
+                                },
+                                {
+                                  "HI": "Health Care Information Codes",
+                                  "HI_01_description": "Health Care Code Information",
+                                  "HI_01": {
+                                    "HI_01_01_description": "Code List Qualifier Code",
+                                    "HI_01_01": "BE",
+                                    "HI_01_01_code_BE": "Value",
+                                    "HI_01_02_description": "Industry Code",
+                                    "HI_01_02": "CC",
+                                    "HI_01_05_description": "Monetary Amount",
+                                    "HI_01_05": "15.00"
+                                  }
+                                },
+                                {
+                                  "HI": "Health Care Information Codes",
+                                  "HI_01_description": "Health Care Code Information",
+                                  "HI_01": {
+                                    "HI_01_01_description": "Code List Qualifier Code",
+                                    "HI_01_01": "BG",
+                                    "HI_01_01_code_BG": "Condition",
+                                    "HI_01_02_description": "Industry Code",
+                                    "HI_01_02": "01"
+                                  }
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "ATTENDING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "PROV",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "ATT123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "ATTREF123"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "RENDERING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "PROV",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "REN123456"
+                                    },
+                                    {
+                                      "PRV": "Provider Information",
+                                      "PRV_01_description": "Provider Code",
+                                      "PRV_01": "PE",
+                                      "PRV_01_code_PE": "Performing",
+                                      "PRV_02_description": "Reference Identification Qualifier",
+                                      "PRV_02": "PXC",
+                                      "PRV_02_code_PXC": "Health Care Provider Taxonomy Code",
+                                      "PRV_03_description": "Reference Identification",
+                                      "PRV_03": "RENSPCL1"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "RENREF456"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "SERVICEFAC",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "LOC",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "SF123456"
+                                    },
+                                    {
+                                      "N3": "Party Location",
+                                      "N3_01_description": "Address Information",
+                                      "N3_01": "500 FIFTH AVE"
+                                    },
+                                    {
+                                      "N4": "Geographic Location",
+                                      "N4_01_description": "City Name",
+                                      "N4_01": "CITY",
+                                      "N4_02_description": "State or Province Code",
+                                      "N4_02": "ST",
+                                      "N4_03_description": "Postal Code",
+                                      "N4_03": "12345"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "2G",
+                                      "REF_01_code_2G": "Amendment",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "SFREF789"
+                                    },
+                                    {
+                                      "PER": "Administrative Communications Contact",
+                                      "PER_01_description": "Contact Function Code",
+                                      "PER_01": "IC",
+                                      "PER_01_code_IC": "Information Contact",
+                                      "PER_02_description": "Name",
+                                      "PER_02": "SF CONTACT",
+                                      "PER_03_description": "Communication Number Qualifier",
+                                      "PER_03": "TE",
+                                      "PER_03_code_TE": "Telephone",
+                                      "PER_04_description": "Communication Number",
+                                      "PER_04": "8005557777"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "SUPERVISING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "PROV",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "SUP123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "SUPREF987"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "AMB PICKUP",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "LOC",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "APU123456"
+                                    },
+                                    {
+                                      "N3": "Party Location",
+                                      "N3_01_description": "Address Information",
+                                      "N3_01": "600 SIXTH ST"
+                                    },
+                                    {
+                                      "N4": "Geographic Location",
+                                      "N4_01_description": "City Name",
+                                      "N4_01": "CITY",
+                                      "N4_02_description": "State or Province Code",
+                                      "N4_02": "ST",
+                                      "N4_03_description": "Postal Code",
+                                      "N4_03": "12345"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310A_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "71",
+                                      "NM1_01_code_71": "Attending Physician",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "AMB DROPOFF",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "LOC",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "XX",
+                                      "NM1_08_code_XX": "Centers for Medicare and Medicaid Services National Provider Identifier",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "ADO123456"
+                                    },
+                                    {
+                                      "N3": "Party Location",
+                                      "N3_01_description": "Address Information",
+                                      "N3_01": "700 SEVENTH ST"
+                                    },
+                                    {
+                                      "N4": "Geographic Location",
+                                      "N4_01_description": "City Name",
+                                      "N4_01": "CITY",
+                                      "N4_02_description": "State or Province Code",
+                                      "N4_02": "ST",
+                                      "N4_03_description": "Postal Code",
+                                      "N4_03": "12345"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "IL",
+                                      "NM1_01_code_IL": "Insured or Subscriber",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "1",
+                                      "NM1_02_code_1": "Person",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER SUBSCRIBER",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_07_description": "Name Suffix",
+                                      "NM1_07": "MI",
+                                      "NM1_08_description": "Identification Code Qualifier",
+                                      "NM1_08": "OS123456"
+                                    },
+                                    {
+                                      "N3": "Party Location",
+                                      "N3_01_description": "Address Information",
+                                      "N3_01": "800 EIGHTH ST"
+                                    },
+                                    {
+                                      "N4": "Geographic Location",
+                                      "N4_01_description": "City Name",
+                                      "N4_01": "CITY",
+                                      "N4_02_description": "State or Province Code",
+                                      "N4_02": "ST",
+                                      "N4_03_description": "Postal Code",
+                                      "N4_03": "12345"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1X",
+                                      "REF_01_code_1X": "Credit or Debit Adjustment Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OSREF111"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "ORG",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OP123456"
+                                    },
+                                    {
+                                      "N3": "Party Location",
+                                      "N3_01_description": "Address Information",
+                                      "N3_01": "900 NINTH ST"
+                                    },
+                                    {
+                                      "N4": "Geographic Location",
+                                      "N4_01_description": "City Name",
+                                      "N4_01": "CITY",
+                                      "N4_02_description": "State or Province Code",
+                                      "N4_02": "ST",
+                                      "N4_03_description": "Postal Code",
+                                      "N4_03": "12345"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "DTP": "Date or Time or Period",
+                                  "DTP_01_description": "Date/Time Qualifier",
+                                  "DTP_01": "472",
+                                  "DTP_01_code_472": "Service",
+                                  "DTP_02_description": "Date Time Period Format Qualifier",
+                                  "DTP_02": "D8",
+                                  "DTP_02_code_D8": "Date Expressed in Format CCYYMMDD",
+                                  "DTP_03_description": "Date Time Period",
+                                  "DTP_03": "20210201"
+                                },
+                                {
+                                  "REF": "Reference Information",
+                                  "REF_01_description": "Reference Identification Qualifier",
+                                  "REF_01": "G2",
+                                  "REF_01_code_G2": "Provider Commercial Number",
+                                  "REF_02_description": "Reference Identification",
+                                  "REF_02": "OPREF222"
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER REFERRING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OPR123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OPRREF333"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER RENDERING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OPR456789"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OPRREF444"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER SERVICEFAC",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OPSF123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OPSFREF555"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER SUPERVISING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OPSUP123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OPSUPREF666"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "NM1-2310_loop": [
+                                    {
+                                      "NM1": "Individual or Organizational Name",
+                                      "NM1_01_description": "Entity Identifier Code",
+                                      "NM1_01": "PR",
+                                      "NM1_01_code_PR": "Payer",
+                                      "NM1_02_description": "Entity Type Qualifier",
+                                      "NM1_02": "2",
+                                      "NM1_02_code_2": "Non-Person Entity",
+                                      "NM1_03_description": "Name Last or Organization Name",
+                                      "NM1_03": "OTHER PAYER BILLING",
+                                      "NM1_04_description": "Name First",
+                                      "NM1_04": "NAME",
+                                      "NM1_09_description": "Identification Code",
+                                      "NM1_09": "PI",
+                                      "NM1_10_description": "Entity Relationship Code",
+                                      "NM1_10": "OPB123456"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "1G",
+                                      "REF_01_code_1G": "Provider UPIN Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "OPBREF777"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "LX-2400_loop": [
+                                    {
+                                      "LX": "Transaction Set Line Number",
+                                      "LX_01_description": "Assigned Number",
+                                      "LX_01": "1"
+                                    },
+                                    {
+                                      "SV1": "Professional Service",
+                                      "SV1_01_description": "Composite Medical Procedure Identifier",
+                                      "SV1_01": {
+                                        "SV1_01_01_description": "Product/Service ID Qualifier",
+                                        "SV1_01_01": "HC",
+                                        "SV1_01_01_code_HC": "Healthcare Common Procedure Coding System (HCPCS) Codes",
+                                        "SV1_01_02_description": "Product/Service ID",
+                                        "SV1_01_02": "99213"
+                                      },
+                                      "SV1_02_description": "Monetary Amount",
+                                      "SV1_02": "40",
+                                      "SV1_03_description": "Unit or Basis for Measurement Code",
+                                      "SV1_03": "UN",
+                                      "SV1_03_code_UN": "Unit",
+                                      "SV1_04_description": "Quantity",
+                                      "SV1_04": "1",
+                                      "SV1_07_description": "Diagnosis Code Pointer",
+                                      "SV1_07": "1"
+                                    },
+                                    {
+                                      "SV5": "Durable Medical Equipment Service",
+                                      "SV5_01_description": "Composite Medical Procedure Identifier",
+                                      "SV5_01": {
+                                        "SV5_01_01_description": "Product/Service ID Qualifier",
+                                        "SV5_01_01": "HC",
+                                        "SV5_01_01_code_HC": "Healthcare Common Procedure Coding System (HCPCS) Codes",
+                                        "SV5_01_02_description": "Product/Service ID",
+                                        "SV5_01_02": "99213"
+                                      },
+                                      "SV5_02_description": "Unit or Basis for Measurement Code",
+                                      "SV5_02": "40",
+                                      "SV5_02_code_40": "Milliliter per Second",
+                                      "SV5_03_description": "Quantity",
+                                      "SV5_03": "UN",
+                                      "SV5_04_description": "Monetary Amount",
+                                      "SV5_04": "1",
+                                      "SV5_07_description": "Prognosis Code",
+                                      "SV5_07": "1",
+                                      "SV5_07_code_1": "Poor"
+                                    },
+                                    {
+                                      "PWK": "Paperwork",
+                                      "PWK_01_description": "Report Type Code",
+                                      "PWK_01": "AA",
+                                      "PWK_01_code_AA": "Agent Inventory Report",
+                                      "PWK_02_description": "Report Transmission Code",
+                                      "PWK_02": "SVC LINE DETAIL"
+                                    },
+                                    {
+                                      "CR1": "Ambulance Certification",
+                                      "CR1_01_description": "Unit or Basis for Measurement Code",
+                                      "CR1_01": "1",
+                                      "CR1_02_description": "Weight",
+                                      "CR1_02": "5",
+                                      "CR1_03_description": "Ambulance Transport Code",
+                                      "CR1_03": "LB"
+                                    },
+                                    {
+                                      "CR3": "Durable Medical Equipment Certification",
+                                      "CR3_01_description": "Certification Type Code",
+                                      "CR3_01": "1",
+                                      "CR3_01_code_1": "Appeal - Immediate",
+                                      "CR3_02_description": "Unit or Basis for Measurement Code",
+                                      "CR3_02": "7",
+                                      "CR3_03_description": "Quantity",
+                                      "CR3_03": "LB"
+                                    },
+                                    {
+                                      "CRC": "Conditions Indicator",
+                                      "CRC_01_description": "Code Category",
+                                      "CRC_01": "GEN",
+                                      "CRC_02_description": "Yes/No Condition or Response Code",
+                                      "CRC_02": "Y",
+                                      "CRC_02_code_Y": "Yes",
+                                      "CRC_03_description": "Condition Indicator",
+                                      "CRC_03": "SVCRC001"
+                                    },
+                                    {
+                                      "DTP": "Date or Time or Period",
+                                      "DTP_01_description": "Date/Time Qualifier",
+                                      "DTP_01": "472",
+                                      "DTP_01_code_472": "Service",
+                                      "DTP_02_description": "Date Time Period Format Qualifier",
+                                      "DTP_02": "D8",
+                                      "DTP_02_code_D8": "Date Expressed in Format CCYYMMDD",
+                                      "DTP_03_description": "Date Time Period",
+                                      "DTP_03": "20210201"
+                                    },
+                                    {
+                                      "QTY": "Quantity Information",
+                                      "QTY_01_description": "Quantity Qualifier",
+                                      "QTY_01": "AA",
+                                      "QTY_01_code_AA": "Unacknowledged Quantity",
+                                      "QTY_02_description": "Quantity",
+                                      "QTY_02": "1"
+                                    },
+                                    {
+                                      "MEA": "Measurements",
+                                      "MEA_01_description": "Measurement Reference ID Code",
+                                      "MEA_01": "PD",
+                                      "MEA_01_code_PD": "Physical Dimensions",
+                                      "MEA_02_description": "Measurement Qualifier",
+                                      "MEA_02": "AA",
+                                      "MEA_02_code_AA": "Alternating Current",
+                                      "MEA_03_description": "Measurement Value",
+                                      "MEA_03": "100"
+                                    },
+                                    {
+                                      "CN1": "Contract Information",
+                                      "CN1_01_description": "Contract Type Code",
+                                      "CN1_01": "1",
+                                      "CN1_02_description": "Monetary Amount",
+                                      "CN1_02": "9",
+                                      "CN1_03_description": "Percent, Decimal Format",
+                                      "CN1_03": "01"
+                                    },
+                                    {
+                                      "REF": "Reference Information",
+                                      "REF_01_description": "Reference Identification Qualifier",
+                                      "REF_01": "F8",
+                                      "REF_01_code_F8": "Original Reference Number",
+                                      "REF_02_description": "Reference Identification",
+                                      "REF_02": "SLLINEREF001"
+                                    },
+                                    {
+                                      "AMT": "Monetary Amount Information",
+                                      "AMT_01_description": "Amount Qualifier Code",
+                                      "AMT_01": "B6",
+                                      "AMT_01_code_B6": "Allowed - Actual",
+                                      "AMT_02_description": "Monetary Amount",
+                                      "AMT_02": "20.00"
+                                    },
+                                    {
+                                      "K3": "File Information",
+                                      "K3_01_description": "Fixed Format Information",
+                                      "K3_01": "INST3"
+                                    },
+                                    {
+                                      "NTE": "Note/Special Instruction",
+                                      "NTE_01_description": "Note Reference Code",
+                                      "NTE_01": "ADD",
+                                      "NTE_01_code_ADD": "Additional Information",
+                                      "NTE_02_description": "Description",
+                                      "NTE_02": "SVC LINE NOTES"
+                                    },
+                                    {
+                                      "PS1": "Purchase Service",
+                                      "PS1_01_description": "Reference Identification",
+                                      "PS1_01": "AA",
+                                      "PS1_02_description": "Monetary Amount",
+                                      "PS1_02": "SVC ADDITIONAL INFO"
+                                    },
+                                    {
+                                      "HCP": "Health Care Pricing",
+                                      "HCP_01_description": "Pricing Methodology",
+                                      "HCP_01": "AA",
+                                      "HCP_02_description": "Monetary Amount",
+                                      "HCP_02": "N/A"
+                                    },
+                                    {
+                                      "LIN-2410_loop": [
+                                        {
+                                          "LIN": "Item Identification",
+                                          "LIN_01_description": "Assigned Identification",
+                                          "LIN_01": "1",
+                                          "LIN_02_description": "Product/Service ID Qualifier",
+                                          "LIN_02": "BP",
+                                          "LIN_02_code_BP": "Buyer's Part Number",
+                                          "LIN_03_description": "Product/Service ID",
+                                          "LIN_03": "DRUGCODE123456"
+                                        },
+                                        {
+                                          "CTP": "Pricing Information",
+                                          "CTP_01_description": "Class of Trade Code",
+                                          "CTP_01": "AA",
+                                          "CTP_01_code_AA": "Branches",
+                                          "CTP_02_description": "Price Identifier Code",
+                                          "CTP_02": "10",
+                                          "CTP_03_description": "Unit Price",
+                                          "CTP_03": "EA"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "2U",
+                                          "REF_01_code_2U": "Payer Identification Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "DRUGREF001"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "PURCHASED SERVICE PROVIDER",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "PSP123456"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "1G",
+                                          "REF_01_code_1G": "Provider UPIN Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "PSPREF123"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "SERVICE FACILITY LOC",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "SFL123456"
+                                        },
+                                        {
+                                          "N3": "Party Location",
+                                          "N3_01_description": "Address Information",
+                                          "N3_01": "1000 TENTH ST"
+                                        },
+                                        {
+                                          "N4": "Geographic Location",
+                                          "N4_01_description": "City Name",
+                                          "N4_01": "CITY",
+                                          "N4_02_description": "State or Province Code",
+                                          "N4_02": "ST",
+                                          "N4_03_description": "Postal Code",
+                                          "N4_03": "12345"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "1G",
+                                          "REF_01_code_1G": "Provider UPIN Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "SFLREF456"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "SUPERVISING PROVIDER",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "SUPP123456"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "1G",
+                                          "REF_01_code_1G": "Provider UPIN Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "SUPPREF789"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "ORDERING PROVIDER",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "ORD123456"
+                                        },
+                                        {
+                                          "N3": "Party Location",
+                                          "N3_01_description": "Address Information",
+                                          "N3_01": "1100 ELEVENTH ST"
+                                        },
+                                        {
+                                          "N4": "Geographic Location",
+                                          "N4_01_description": "City Name",
+                                          "N4_01": "CITY",
+                                          "N4_02_description": "State or Province Code",
+                                          "N4_02": "ST",
+                                          "N4_03_description": "Postal Code",
+                                          "N4_03": "12345"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "1G",
+                                          "REF_01_code_1G": "Provider UPIN Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "ORDREF321"
+                                        },
+                                        {
+                                          "PER": "Administrative Communications Contact",
+                                          "PER_01_description": "Contact Function Code",
+                                          "PER_01": "IC",
+                                          "PER_01_code_IC": "Information Contact",
+                                          "PER_02_description": "Name",
+                                          "PER_02": "ORDERING CONTACT",
+                                          "PER_03_description": "Communication Number Qualifier",
+                                          "PER_03": "TE",
+                                          "PER_03_code_TE": "Telephone",
+                                          "PER_04_description": "Communication Number",
+                                          "PER_04": "8006667777"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "REFERRING PROVIDER",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "REF123456"
+                                        },
+                                        {
+                                          "REF": "Reference Information",
+                                          "REF_01_description": "Reference Identification Qualifier",
+                                          "REF_01": "1G",
+                                          "REF_01_code_1G": "Provider UPIN Number",
+                                          "REF_02_description": "Reference Identification",
+                                          "REF_02": "REFREF987"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "AMB PICKUP LOC",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "APU456789"
+                                        },
+                                        {
+                                          "N3": "Party Location",
+                                          "N3_01_description": "Address Information",
+                                          "N3_01": "1200 TWELFTH ST"
+                                        },
+                                        {
+                                          "N4": "Geographic Location",
+                                          "N4_01_description": "City Name",
+                                          "N4_01": "CITY",
+                                          "N4_02_description": "State or Province Code",
+                                          "N4_02": "ST",
+                                          "N4_03_description": "Postal Code",
+                                          "N4_03": "12345"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "NM1-2420_loop": [
+                                        {
+                                          "NM1": "Individual or Organizational Name",
+                                          "NM1_01_description": "Entity Identifier Code",
+                                          "NM1_01": "PR",
+                                          "NM1_01_code_PR": "Payer",
+                                          "NM1_02_description": "Entity Type Qualifier",
+                                          "NM1_02": "2",
+                                          "NM1_02_code_2": "Non-Person Entity",
+                                          "NM1_03_description": "Name Last or Organization Name",
+                                          "NM1_03": "AMB DROPOFF LOC",
+                                          "NM1_04_description": "Name First",
+                                          "NM1_04": "NAME",
+                                          "NM1_09_description": "Identification Code",
+                                          "NM1_09": "PI",
+                                          "NM1_10_description": "Entity Relationship Code",
+                                          "NM1_10": "ADO456789"
+                                        },
+                                        {
+                                          "N3": "Party Location",
+                                          "N3_01_description": "Address Information",
+                                          "N3_01": "1300 THIRTEENTH ST"
+                                        },
+                                        {
+                                          "N4": "Geographic Location",
+                                          "N4_01_description": "City Name",
+                                          "N4_01": "CITY",
+                                          "N4_02_description": "State or Province Code",
+                                          "N4_02": "ST",
+                                          "N4_03_description": "Postal Code",
+                                          "N4_03": "12345"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "LQ-2440_loop": [
+                                        {
+                                          "LQ": "Industry Code Identification",
+                                          "LQ_01_description": "Code List Qualifier Code",
+                                          "LQ_01": "AA",
+                                          "LQ_01_code_AA": "Country Code (Finance and Acquisition)",
+                                          "LQ_02_description": "Industry Code",
+                                          "LQ_02": "FORMID1"
+                                        },
+                                        {
+                                          "FRM": "Supporting Documentation",
+                                          "FRM_01_description": "Assigned Identification",
+                                          "FRM_01": "AA",
+                                          "FRM_02_description": "Yes/No Condition or Response Code",
+                                          "FRM_02": "FORM DATA EXAMPLE"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
